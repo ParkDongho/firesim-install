@@ -5,7 +5,7 @@
 ## 초기 설정
 
 ```bash
-sudo apt install git openssh-server
+sudo apt install -y git openssh-server
 ```
 
 ```bash
