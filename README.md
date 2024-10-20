@@ -20,7 +20,7 @@ chmod 700 install_2.sh
 
 ```bash
 cd ~/firesim-install
-sudo ./install_1.sh
+./install_1.sh
 ```
 
 ## FPGA 카드 장착
@@ -31,7 +31,7 @@ sudo ./install_1.sh
 
 ```bash
 cd ~/firesim-install
-sudo ./install_2.sh
+./install_2.sh
 ```
 
 - tcl 파일을 통해 자동화
