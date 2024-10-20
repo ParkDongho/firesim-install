@@ -15,7 +15,7 @@ sudo addgroup firesim
 sudo chmod 755 /usr/local/bin/firesim*
 sudo chgrp firesim /usr/local/bin/firesim*
 sudo visudo /etc/sudoers.d/firesim
-sudo "%firesim ALL=(ALL) NOPASSWD: /usr/local/bin/firesim-*" >> /etc/sudoers.d/firesim
+sudo sh -c "echo '%firesim ALL=(ALL) NOPASSWD: /usr/local/bin/firesim-*' > /etc/sudoers.d/firesim"
 sudo chmod 400 /etc/sudoers.d/firesim
 
 echo "2. Add your user to the firesim group"
