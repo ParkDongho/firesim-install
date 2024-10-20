@@ -1,5 +1,7 @@
 # firesim-install
 
+# Run Machine
+
 ```bash
 sudo apt install git openssh-server
 ```
@@ -17,3 +19,15 @@ sudo ./install_1.sh
 cd ~/firesim-install
 sudo ./install_2.sh
 ```
+
+# Manager Machine
+
+
+
+
+
+
+
+
+
+# Build Machine
