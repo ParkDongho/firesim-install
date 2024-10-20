@@ -56,5 +56,3 @@ lsmod | grep -i xvsec
 
 which xvsecctl
 
-sudo shutdown -h now
-
