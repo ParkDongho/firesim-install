@@ -1,4 +1,4 @@
-# 1. Install/enable FireSim scripts to new firesim Linux group
+echo "1. Install/enable FireSim scripts to new firesim Linux group"
 cd ~/     # 또는 임시 디렉토리
 mkdir firesim-script-installs
 cd firesim-script-installs
@@ -15,14 +15,14 @@ sudo addgroup firesim
 sudo chmod 755 /usr/local/bin/firesim*
 sudo chgrp firesim /usr/local/bin/firesim*
 sudo visudo /etc/sudoers.d/firesim
-echo "%firesim ALL=(ALL) NOPASSWD: /usr/local/bin/firesim-*" | sudo tee /etc/sudoers.d/firesim > /dev/null
+sudo "%firesim ALL=(ALL) NOPASSWD: /usr/local/bin/firesim-*" >> /etc/sudoers.d/firesim
 sudo chmod 400 /etc/sudoers.d/firesim
 
-# 2. Add your user to the firesim group
+echo "2. Add your user to the firesim group"
 sudo usermod -a -G firesim $USER
 sudo -l
 
-# 3. Install Vivado Lab and Cable Drivers
+echo "3. Install Vivado Lab and Cable Drivers"
 cd ~/Downloads/Xilinx_Vivado_Lab_Lin_2023.1_0507_1903
 sudo ./installLibs.sh
 sudo ./xsetup --batch Install --agree XilinxEULA,3rdPartyEULA --edition "Vivado Lab Edition (Standalone)"
@@ -33,7 +33,7 @@ source ~/.bashrc
 cd /tools/Xilinx/Vivado_Lab/2023.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/
 sudo ./install_drivers
 
-# 4.  Install the Xilinx XDMA and XVSEC drivers
+echo "4.  Install the Xilinx XDMA and XVSEC drivers"
 cd ~/   # 또는 작업하길 원하는 디렉토리
 git clone https://github.com/ParkDongho/dma_ip_drivers/tree/nitefury
 cd dma_ip_drivers
