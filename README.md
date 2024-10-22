@@ -15,16 +15,43 @@ cd ~/firesim-install
 chmod 700 install_*.sh
 ```
 
-## 드라이버 설치
+## 1. fire Linux 그룹 생성 
 
 ```bash
 cd ~/firesim-install
 ./install_1.sh
 ```
 
+## 2. user 그룹에 유저 추가
+
+```bash
+cd ~/firesim-install
+./install_2.sh
+```
+
+## 3. Vivado Lab 설치
+
+```bash
+cd ~/firesim-install
+./install_3_1.sh
+```
+
+```bash
+./install_3_2.sh
+```
+
+## 드라이버 설치
+
+```bash
+./install_4.sh
+```
+
 ## FPGA 카드 장착
 - 컴퓨터를 종료 후 FPGA카드 장착
 - 콜드부팅 수행
+
+
+## 5. FPGA 메모리 설정
 
 ## Vivado Lab 기반 FPGA 메모리 설정
 
