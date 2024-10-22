@@ -21,37 +21,4 @@ echo "2. Add your user to the firesim group"
 sudo usermod -a -G firesim $USER
 sudo -l
 
-echo "3. Install Vivado Lab and Cable Drivers"
-cd ~/Downloads/Xilinx_Vivado_Lab_Lin_2023.1_0507_1903
-sudo ./installLibs.sh
-sudo ./xsetup --batch Install --agree XilinxEULA,3rdPartyEULA --edition "Vivado Lab Edition (Standalone)"
-
-echo "source /tools/Xilinx/Vivado_Lab/2023.1/settings64.sh" >> ~/.bashrc
-source /tools/Xilinx/Vivado_Lab/2023.1/settings64.sh
-source ~/.bashrc
-cd /tools/Xilinx/Vivado_Lab/2023.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/
-sudo ./install_drivers
-
-echo "4.  Install the Xilinx XDMA and XVSEC drivers"
-cd ~/   # 또는 작업하길 원하는 디렉토리
-git clone https://github.com/ParkDongho/dma_ip_drivers
-cd dma_ip_drivers
-git checkout nitefury
-cd XDMA/linux-kernel/xdma
-sudo make install
-sudo insmod $(find /lib/modules/$(uname -r) -name "xdma.ko") poll_mode=1
-lsmod | grep -i xdma
-
-cd ~/   # 또는 작업하길 원하는 디렉토리
-git clone https://github.com/paulmnt/dma_ip_drivers dma_ip_drivers_xvsec
-cd dma_ip_drivers_xvsec
-git checkout 302856a
-cd XVSEC/linux-kernel/
-
-make clean all
-sudo make install
-sudo modprobe xvsec
-lsmod | grep -i xvsec
-
-which xvsecctl
-
+sudo reboot -h now
