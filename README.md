@@ -12,8 +12,7 @@ sudo apt install -y git openssh-server
 cd ~
 git clone https://github.com/ParkDongho/firesim-install.git
 cd ~/firesim-install
-chmod 700 install_1.sh
-chmod 700 install_2.sh
+chmod 700 install_*.sh
 ```
 
 ## 드라이버 설치
