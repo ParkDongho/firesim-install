@@ -46,6 +46,11 @@ cd ~/firesim-install
 ./install_4.sh
 ```
 
+- xdma, xvsec 커널 모듈을 순서대로 설치
+- xdma의 경우 nitefury 지원을 위해 수정된 버전이 자동 설치 됨
+  - Alveo 기반으로 사용시 `install_4.sh` 코드의 수정 필요
+
+
 ## FPGA 카드 장착
 - 컴퓨터를 종료 후 FPGA카드 장착
 - 콜드부팅 수행
