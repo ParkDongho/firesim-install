@@ -73,6 +73,5 @@ cd ~/firesim-install
 lspci -vvv -d 10ee:903f
 ```
 
-# 이후 설치 절치
-- https://docs.fires.im/en/1.20.1/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Initial-Setup/RHS-Research-Nitefury-II.html#system-setup
-- non-sudo setup 부터 수행
+# 이후 설치 절차
+- [firesim docs: System Setup](https://docs.fires.im/en/1.20.1/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Initial-Setup/RHS-Research-Nitefury-II.html#system-setup) 위 문서에서 non-sudo setup 부터 이어서 수행
