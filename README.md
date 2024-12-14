@@ -65,9 +65,9 @@ cd ~/firesim-install
 ./install_5.sh
 ```
 
-- tcl 파일을 통해 자동화
-- 콜드부팅 수행
-- 부팅 완료후 아래명령어를 통해 검증
+- tcl 파일을 통하여 vivado lab 설정을 자동화
+- 실행 완료 후 콜드부팅 수행
+- 부팅 완료 후 아래명령어를 통해 검증
 
 ```bash
 lspci -vvv -d 10ee:903f
