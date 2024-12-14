@@ -2,11 +2,11 @@ echo "1. Install/enable FireSim scripts to new firesim Linux group"
 cd ~/     # 또는 임시 디렉토리
 mkdir firesim-script-installs
 cd firesim-script-installs
-git clone https://github.com/firesim/firesim
+git clone https://github.com/parkdongho/firesim
 cd firesim
 # 최신 공식 firesim 릴리스를 체크아웃합니다.
 # 참고: 문서 버전이 "stable"이 아닌 경우 최신 릴리스가 아닐 수 있습니다.
-git checkout 1.20.1
+git checkout 1.20.1-fix
 sudo cp deploy/sudo-scripts/* /usr/local/bin
 sudo cp platforms/xilinx_alveo_u250/scripts/* /usr/local/bin
 cd ~
