@@ -51,13 +51,13 @@ cd ~/firesim-install
 - 콜드부팅 수행
 
 
-## 5. FPGA 메모리 설정
+## 5. FPGA 메모리 및 부팅 설정
 
-## Vivado Lab 기반 FPGA 메모리 설정
+## Vivado Lab 기반 FPGA 설정
 
 ```bash
 cd ~/firesim-install
-./install_2.sh
+./install_5.sh
 ```
 
 - tcl 파일을 통해 자동화
